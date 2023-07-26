@@ -34,16 +34,36 @@
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+            <li class="nav-item ms-md-4">
+              <a
+                class="nav-link nav-link-top ff-condensed active"
+                aria-current="page"
+                href="#"
                 >Tentang Kami</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Donasi</a>
+            <li class="nav-item ms-md-4">
+              <a class="nav-link nav-link-top ff-condensed active" href="#"
+                >Donasi</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Sambutan Ketua</a>
+            <li class="nav-item ms-md-4">
+              <a class="nav-link nav-link-top ff-condensed active" href="#"
+                >Sambutan Ketua</a
+              >
+            </li>
+            <li class="nav-item ms-md-4 py-2 py-md-0">
+              <a class="nav-link active d-flex align-items-center" href="#">
+                <img
+                  width="24"
+                  height="24"
+                  src="https://img.icons8.com/material/24/user-male-circle--v1.png"
+                  alt="user-male-circle--v1"
+                />
+                <span style="height: 100%" class="ps-2 ff-condensed"
+                  >Masuk</span
+                ></a
+              >
             </li>
           </ul>
         </div>
@@ -60,5 +80,15 @@ export default {};
 #navbar-container {
   border-bottom: 1px solid #aeaeae;
   height: fit-content;
+}
+
+.nav-link-top {
+  transition: all 300ms ease-in-out;
+}
+
+.nav-link-top:hover {
+  background-color: #daecce;
+  font-weight: 500;
+  border-radius: 5px;
 }
 </style>
