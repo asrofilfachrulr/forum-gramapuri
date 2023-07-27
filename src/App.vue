@@ -3,9 +3,7 @@
     <navbar></navbar>
     <main>
       <!-- carousel -->
-      <div class="container-fluid px-0 py-8 py-md-5" id="carousel-container">
-        <home-carousel></home-carousel>
-      </div>
+      <home-carousel></home-carousel>
     </main>
   </div>
 </template>
@@ -22,9 +20,4 @@ export default {
 };
 </script>
 
-<style>
-#carousel-container {
-  background-image: url("./assets/main-carousel-bg.jpg");
-  background-repeat: repeat;
-}
-</style>
+<style></style>
