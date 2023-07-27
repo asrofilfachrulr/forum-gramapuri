@@ -13,7 +13,7 @@
           />
           <div class="d-flex flex-column">
             <span class="lh-1" style="font-size: 0.85rem; letter-spacing: 2px"
-              >Gramapuri Persada</span
+              >Gramapuri Persada Blok E</span
             >
             <span class="fs-5 fw-medium">Sedekah Jum'at</span>
           </div></a
