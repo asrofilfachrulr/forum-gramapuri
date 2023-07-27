@@ -48,6 +48,31 @@
       .ff-condensed {
         font-family: "Roboto Condensed", sans-serif;
       }
+      body {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scrollbar-width: thin; /* Set the width of the scrollbar */
+        scrollbar-color: #888888 #f0f0f0; /* Set the color of the scrollbar */
+      }
+
+      /* Style the scrollbar track */
+      body::-webkit-scrollbar {
+        width: 10px; /* Set the width of the scrollbar */
+      }
+
+      /* Style the scrollbar thumb */
+      body::-webkit-scrollbar-thumb {
+        background-color: #888888; /* Set the color of the scrollbar thumb */
+        border-radius: 3px; /* Rounded corners for the scrollbar thumb */
+      }
+
+      body::-moz-scrollbar {
+        width: 10px;
+      }
+
+      body::-moz-scrollbar-thumb {
+        background-color: #888888;
+        border-radius: 3px;
+      }
     </style>
   </head>
 
