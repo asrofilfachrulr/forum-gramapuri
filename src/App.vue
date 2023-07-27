@@ -1,17 +1,30 @@
 <template>
   <div class="container-fluid p-0 m-0">
-    <Navbar></Navbar>
-    <main>main</main>
+    <navbar></navbar>
+    <main>
+      <!-- carousel -->
+      <div class="container-fluid px-0 py-8 py-md-5" id="carousel-container">
+        <home-carousel></home-carousel>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
+import navbar from "./components/Navbar.vue";
+import HomeCarousel from "./components/HomeCarousel.vue";
+
 export default {
   components: {
-    Navbar,
+    navbar,
+    "home-carousel": HomeCarousel,
   },
 };
 </script>
 
-<style></style>
+<style>
+#carousel-container {
+  background-image: url("./assets/main-carousel-bg.jpg");
+  background-repeat: repeat;
+}
+</style>
