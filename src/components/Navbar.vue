@@ -52,6 +52,18 @@
                 >Sambutan Ketua</a
               >
             </li>
+            <li class="nav-item dropdown ms-md-4">
+              <a
+                class="nav-link nav-link-top ff-condensed active dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Informasi</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Berita</a></li>
+                <li><a class="dropdown-item" href="#">Keuangan</a></li>
+              </ul>
+            </li>
             <li class="nav-item ms-md-4 py-2 py-md-0">
               <a class="nav-link active d-flex align-items-center" href="#">
                 <img
