@@ -1,7 +1,7 @@
 <template>
   <div class="container p-0">
-    <div class="row p-4 gy-2 d-flex justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6 p-0">
+    <div class="row row-gap-3 p-4 p-md-0 d-flex justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide rounded-md-custom"
@@ -53,8 +53,8 @@
         </div>
       </div>
       <div class="col-12 col-md-4 col-lg-3">
-        <div class="row" id="row-parallel-with-home-carousel">
-          <div class="col-6 col-md-12 p-0 pe-2 pe-md-0">
+        <div class="row row-gap-2" id="row-parallel-with-home-carousel">
+          <div class="col-6 col-md-12">
             <img
               src="https://www.gramapuripersada.com/wp-content/uploads/2020/06/LOGO-GRAMAPURI-SOSMED-1024x1024.jpg"
               alt=""
@@ -62,7 +62,7 @@
               style="object-fit: cover"
             />
           </div>
-          <div class="col-6 col-md-12 p-0 ps-2 ps-md-0">
+          <div class="col-6 col-md-12">
             <img
               src="../assets/gerbang-gramapuri-1024x768.jpg"
               alt=""
