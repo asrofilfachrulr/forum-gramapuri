@@ -1,7 +1,7 @@
 <template>
   <div class="container p-0">
-    <div class="row">
-      <div class="col-12 col-md-9 col-lg-8 mb-3 mb-md-0 mx-auto">
+    <div class="row p-4 gy-2 d-flex justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6 p-0">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide rounded-md-custom"
@@ -9,13 +9,12 @@
           data-bs-ride="carousel"
           data-bs-interval="4000"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner cover-dim" id="carousel-inner-home">
             <div class="carousel-item active">
               <img
                 src="https://unsplash.com/photos/kZ1zThg6G40/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkwNDE0NTA4fA&force=true&w=1920"
                 class="d-block w-100 position-relative"
                 alt="..."
-                loading="lazy"
               />
             </div>
             <div class="carousel-item">
@@ -30,7 +29,6 @@
                 src="https://unsplash.com/photos/lZOGde6okcA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDR8fG1vc3F1ZXxlbnwwfHx8fDE2OTAzNTQ3ODB8MA&force=true&w=1920"
                 class="d-block w-100 position-relative"
                 alt="..."
-                loading="lazy"
               />
             </div>
           </div>
@@ -39,7 +37,6 @@
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
-            loading="lazy"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -55,21 +52,21 @@
           </button>
         </div>
       </div>
-      <div class="col-12 col-md-3 col-lg-4 d-flex flex-wrap">
-        <div class="row">
-          <div class="col-6 col-md-12">
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="row" id="row-parallel-with-home-carousel">
+          <div class="col-6 col-md-12 p-0 pe-2 pe-md-0">
             <img
               src="https://www.gramapuripersada.com/wp-content/uploads/2020/06/LOGO-GRAMAPURI-SOSMED-1024x1024.jpg"
               alt=""
-              class="d-block rounded-md-custom w-100 h-50"
+              class="d-block rounded-md-custom w-100"
               style="object-fit: cover"
             />
           </div>
-          <div class="col-6 col-md-12">
+          <div class="col-6 col-md-12 p-0 ps-2 ps-md-0">
             <img
               src="../assets/gerbang-gramapuri-1024x768.jpg"
               alt=""
-              class="d-block rounded-md-custom w-100 h-50"
+              class="d-block rounded-md-custom w-100"
               style="object-fit: cover"
             />
           </div>
@@ -79,11 +76,42 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {},
+};
+</script>
+
 <style>
 /* Custom CSS */
+.rounded-md-custom {
+  border-radius: 0.5rem; /* Set the desired border radius for "md" and above */
+}
+
+@media (max-width: 768px) {
+  #row-parallel-with-home-carousel img {
+    max-height: 160px;
+  }
+}
+
 @media (min-width: 768px) {
-  .rounded-md-custom {
-    border-radius: 0.5rem; /* Set the desired border radius for "md" and above */
+  #row-parallel-with-home-carousel img {
+    height: 152px;
+  }
+}
+@media (min-width: 992px) {
+  #row-parallel-with-home-carousel img {
+    height: 152px;
+  }
+}
+@media (min-width: 1200px) {
+  #row-parallel-with-home-carousel img {
+    height: 185px;
+  }
+}
+@media (min-width: 1400px) {
+  #row-parallel-with-home-carousel img {
+    height: 215px;
   }
 }
 
@@ -95,12 +123,16 @@
   object-fit: cover;
 }
 
-#carouselExampleAutoplaying .carousel-inner::before {
+.cover-dim {
+  position: relative;
+}
+
+.cover-dim::before {
   display: block;
   position: absolute;
   content: "";
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.35);
   top: 0;
   left: 0;
   width: 100%;
