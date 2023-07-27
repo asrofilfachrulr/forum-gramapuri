@@ -1,7 +1,7 @@
 /* eslint-disable */
 <template>
   <div id="navbar-container" class="container-fluid m-0 p-0">
-    <nav class="navbar navbar-expand-md shadow-md">
+    <nav class="navbar navbar-expand-lg shadow-md">
       <div class="container-md">
         <a class="navbar-brand d-flex flex-nowrap" href="#">
           <img
