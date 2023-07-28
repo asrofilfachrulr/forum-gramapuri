@@ -37,8 +37,8 @@
             <li class="nav-item ms-md-4">
               <a
                 class="nav-link nav-link-top ff-condensed active"
-                aria-current="page"
                 href="#about"
+                @click="toggleCollapse"
                 >Tentang Kami</a
               >
             </li>
@@ -46,6 +46,7 @@
               <a
                 class="nav-link nav-link-top ff-condensed active"
                 href="#donation"
+                @click="toggleCollapse"
                 >Donasi</a
               >
             </li>
@@ -53,6 +54,7 @@
               <a
                 class="nav-link nav-link-top ff-condensed active"
                 href="#speech"
+                @click="toggleCollapse"
                 >Sambutan Ketua</a
               >
             </li>
@@ -113,6 +115,7 @@
 </template>
 
 <script>
+const bootstrap = require("bootstrap");
 export default {
   methods: {
     emitMaintenanceModal() {
@@ -120,6 +123,14 @@ export default {
         "emitted modal-type-info from navbar with value 'maintenance'"
       );
       this.$emit("modal-type-info", "maintenance");
+    },
+    toggleCollapse() {
+      if (window.innerWidth < 992) {
+        console.log("collapsing collapse");
+        const el = document.getElementById("navbarSupportedContent");
+        const clps = new bootstrap.Collapse(el);
+        clps.toggle();
+      }
     },
   },
 };
