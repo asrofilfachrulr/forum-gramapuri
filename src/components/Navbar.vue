@@ -60,8 +60,26 @@
                 >Informasi</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Berita</a></li>
-                <li><a class="dropdown-item" href="#">Keuangan</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#basic-info-modal"
+                    @click="emitMaintenanceModal"
+                    >Berita</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#basic-info-modal"
+                    @click="emitMaintenanceModal"
+                    >Keuangan</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item ms-md-4 py-2 py-md-0">
@@ -85,7 +103,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    emitMaintenanceModal() {
+      console.log(
+        "emitted modal-type-info from navbar with value 'maintenance'"
+      );
+      this.$emit("modal-type-info", "maintenance");
+    },
+  },
+};
 </script>
 
 <style>
