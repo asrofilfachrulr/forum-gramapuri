@@ -1,6 +1,10 @@
 /* eslint-disable */
 <template>
-  <div id="navbar-container" class="container-fluid m-0 p-0">
+  <div
+    id="navbar-container"
+    class="container-fluid m-0 p-0 sticky-top"
+    style="background-color: white"
+  >
     <nav class="navbar navbar-expand-lg shadow-md">
       <div class="container-md">
         <a class="navbar-brand d-flex flex-nowrap" href="#">
