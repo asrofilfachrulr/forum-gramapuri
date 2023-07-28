@@ -6,6 +6,9 @@
         <a
           class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
           href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#basic-info-modal"
+          @click="emitMaintenanceModal"
           >Lihat Semua →</a
         >
       </div>
@@ -15,7 +18,15 @@
       class="row flex-nowrap py-4 scroll-container"
       style="overflow: auto hidden"
     >
-      <component :is="cardNews" v-for="index in 5" :key="index"> </component>
+      <component
+        :is="cardNews"
+        v-for="index in 5"
+        :key="index"
+        data-bs-toggle="modal"
+        data-bs-target="#basic-info-modal"
+        @click="emitMaintenanceModal"
+      >
+      </component>
     </div>
   </div>
 </template>
@@ -27,6 +38,14 @@ export default {
     return {
       cardNews: CardNews,
     };
+  },
+  methods: {
+    emitMaintenanceModal() {
+      console.log(
+        "emitted modal-type-info from navbar with value 'maintenance'"
+      );
+      this.$emit("modal-type-info", "maintenance");
+    },
   },
 };
 </script>

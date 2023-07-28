@@ -6,7 +6,10 @@
       <!-- carousel -->
       <home-carousel></home-carousel>
       <!-- sections -->
-      <home-section :innerComponent="newsSection"></home-section>
+      <home-section
+        :innerComponent="newsSection"
+        @modal-type-info="setModalInfo"
+      ></home-section>
     </main>
   </div>
 </template>

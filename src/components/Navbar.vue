@@ -83,7 +83,13 @@
               </ul>
             </li>
             <li class="nav-item ms-md-4 py-2 py-md-0">
-              <a class="nav-link active d-flex align-items-center" href="#">
+              <a
+                class="nav-link active d-flex align-items-center"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#basic-info-modal"
+                @click="emitMaintenanceModal"
+              >
                 <img
                   width="24"
                   height="24"
