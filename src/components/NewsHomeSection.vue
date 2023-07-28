@@ -14,29 +14,34 @@
       </div>
     </div>
 
-    <div
-      class="row flex-nowrap py-4 scroll-container"
-      style="overflow: auto hidden"
-    >
-      <component
-        :is="cardNews"
-        v-for="index in 5"
-        :key="index"
-        data-bs-toggle="modal"
-        data-bs-target="#basic-info-modal"
-        @click="emitMaintenanceModal"
+    <div class="row position-relative">
+      <div
+        class="row flex-nowrap py-4 scroll-container"
+        style="overflow: hidden"
+        id="news-card-horizontal-list"
       >
-      </component>
+        <component
+          :is="cardNews"
+          v-for="index in 5"
+          :key="index"
+          data-bs-toggle="modal"
+          data-bs-target="#basic-info-modal"
+          @click="emitMaintenanceModal"
+        >
+        </component>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import CardNews from "./ExampleCardNews.vue";
+import { shallowRef } from "vue";
+
 export default {
   data() {
     return {
-      cardNews: CardNews,
+      cardNews: shallowRef(CardNews),
     };
   },
   methods: {
@@ -77,5 +82,15 @@ export default {
 .scroll-container::-moz-scrollbar-thumb {
   background-color: #888888;
   border-radius: 3px;
+}
+
+.btn-custom-icon-rounded {
+  height: min-content;
+  width: min-content;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
 }
 </style>
