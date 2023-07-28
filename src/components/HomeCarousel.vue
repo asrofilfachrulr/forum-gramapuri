@@ -94,7 +94,7 @@
                   style="z-index: 4"
                 >
                   <a href="https://www.gramapuripersada.com/" target="_blank">
-                    <button type="button" class="btn btn-outline-light">
+                    <button type="button" class="btn btn-outline-light fs-6">
                       Homepage
                     </button>
                   </a>
@@ -119,7 +119,7 @@
                   >
                     <button
                       type="button"
-                      class="btn btn-outline-light"
+                      class="btn btn-outline-light fs-6"
                       @mouseover="isHovered = true"
                       @mouseleave="isHovered = false"
                     >
@@ -209,22 +209,6 @@ export default {
 
 #carouselExampleAutoplaying img {
   object-fit: cover;
-}
-
-.cover-dim {
-  position: relative;
-}
-
-.cover-dim::before {
-  display: block;
-  position: absolute;
-  content: "";
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.35);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 #carouselExampleAutoplaying button {

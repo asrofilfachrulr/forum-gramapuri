@@ -38,17 +38,21 @@
               <a
                 class="nav-link nav-link-top ff-condensed active"
                 aria-current="page"
-                href="#"
+                href="#about"
                 >Tentang Kami</a
               >
             </li>
             <li class="nav-item ms-md-4">
-              <a class="nav-link nav-link-top ff-condensed active" href="#"
+              <a
+                class="nav-link nav-link-top ff-condensed active"
+                href="#donation"
                 >Donasi</a
               >
             </li>
             <li class="nav-item ms-md-4">
-              <a class="nav-link nav-link-top ff-condensed active" href="#"
+              <a
+                class="nav-link nav-link-top ff-condensed active"
+                href="#speech"
                 >Sambutan Ketua</a
               >
             </li>

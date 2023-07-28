@@ -22,7 +22,7 @@
       >
         <component
           :is="cardNews"
-          v-for="index in 5"
+          v-for="index in 10"
           :key="index"
           data-bs-toggle="modal"
           data-bs-target="#basic-info-modal"
