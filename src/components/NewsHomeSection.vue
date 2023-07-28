@@ -17,7 +17,7 @@
     <div class="row position-relative">
       <div
         class="row flex-nowrap py-4 scroll-container"
-        style="overflow: hidden"
+        style="overflow: auto hidden"
         id="news-card-horizontal-list"
       >
         <component
@@ -92,5 +92,15 @@ export default {
   border: none;
   border-radius: 100%;
   background-color: white;
+}
+
+#news-card-horizontal-list::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+#news-card-horizontal-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

@@ -6,10 +6,15 @@
       <!-- carousel -->
       <home-carousel></home-carousel>
       <!-- sections -->
+
+      <!-- news -->
       <home-section
         :innerComponent="newsSection"
         @modal-type-info="setModalInfo"
       ></home-section>
+
+      <!-- about -->
+      <home-section></home-section>
     </main>
   </div>
 </template>
@@ -20,6 +25,7 @@ import HomeCarousel from "./components/HomeCarousel.vue";
 import HomeSection from "./components/HomeSection.vue";
 import NewsHomeSection from "./components/NewsHomeSection.vue";
 import BasicInfoModal from "./components/BasicInfoModal.vue";
+import { shallowRef } from "vue";
 
 export default {
   components: {
@@ -30,7 +36,7 @@ export default {
   },
   data() {
     return {
-      newsSection: NewsHomeSection,
+      newsSection: shallowRef(NewsHomeSection),
       modalInfoType: "",
     };
   },
