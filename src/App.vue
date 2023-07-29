@@ -1,14 +1,20 @@
 <template>
   <div class="container-fluid p-0 m-0">
-    <basic-info-modal :typeInfo="modalInfoType"></basic-info-modal>
     <navbar @modal-type-info="setModalInfo"></navbar>
     <main>
+      <basic-info-modal :typeInfo="modalInfoType"></basic-info-modal>
       <!-- carousel -->
       <home-carousel></home-carousel>
       <!-- sections -->
 
       <!-- about -->
       <home-section :innerComponent="aboutSection"></home-section>
+
+      <!-- visi misi -->
+      <home-section
+        :shade="{ state: true, color: 'var(--clr-shade)' }"
+        :innerComponent="goalNMission"
+      ></home-section>
 
       <!-- news -->
       <!-- <home-section
@@ -28,6 +34,7 @@ import HomeSection from "./components/HomeSection.vue";
 import BasicInfoModal from "./components/BasicInfoModal.vue";
 import AboutSection from "./components/AboutSection.vue";
 import { shallowRef } from "vue";
+import GoalNMission from "./components/GoalNMission.vue";
 
 export default {
   components: {
@@ -40,6 +47,7 @@ export default {
     return {
       // newsSection: shallowRef(NewsHomeSection),
       aboutSection: shallowRef(AboutSection),
+      goalNMission: shallowRef(GoalNMission),
       modalInfoType: "",
     };
   },
@@ -56,6 +64,12 @@ export default {
 :root {
   --clr-accent: #0a4d1f;
   --clr-accent-light: #60af79;
+
+  --clr-shade: #effff0;
+}
+
+main {
+  margin-top: 70px !important;
 }
 
 .underline-accent {
@@ -106,5 +120,9 @@ export default {
 .cover-accent-on-hover:hover {
   background-color: rgba(96, 175, 121, 0.15);
   border-color: transparent;
+}
+
+.ff-cursive {
+  font-family: "Borel", cursive;
 }
 </style>

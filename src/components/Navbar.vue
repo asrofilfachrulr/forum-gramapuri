@@ -2,7 +2,7 @@
 <template>
   <div
     id="navbar-container"
-    class="container-fluid m-0 p-0 sticky-top"
+    class="container-fluid m-0 p-0 fixed-top"
     style="background-color: white"
   >
     <nav class="navbar navbar-expand-lg shadow-md">
@@ -23,13 +23,14 @@
           </div></a
         >
         <button
+          id="navbar-toggler"
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,36 +42,37 @@
             <li class="nav-item ms-md-4">
               <a
                 class="nav-link nav-link-top ff-condensed active"
+                @click="toggleNavbar"
                 href="#about"
-                @click="toggleCollapse"
                 >Tentang Kami</a
               >
             </li>
             <li class="nav-item ms-md-4">
               <a
                 class="nav-link nav-link-top ff-condensed active"
-                href="#donation"
-                @click="toggleCollapse"
-                >Donasi</a
+                @click="toggleNavbar"
+                href="#visi-misi"
+                >Visi dan Misi</a
               >
             </li>
             <li class="nav-item ms-md-4">
               <a
                 class="nav-link nav-link-top ff-condensed active"
-                href="#speech"
-                @click="toggleCollapse"
-                >Sambutan Ketua</a
+                @click="toggleNavbar"
+                href="#donation"
+                >Donasi</a
               >
             </li>
-            <li class="nav-item dropdown ms-md-4">
+            <li class="nav-item dropdown ms-md-4" id="info-dropdown">
               <a
                 class="nav-link nav-link-top ff-condensed active dropdown-toggle"
                 data-bs-toggle="dropdown"
+                data-bs-target="#info-dropdown"
                 href="#"
                 >Informasi</a
               >
               <ul class="dropdown-menu">
-                <li>
+                <li @click="toggleNavbar">
                   <a
                     class="dropdown-item"
                     href="#"
@@ -80,7 +82,7 @@
                     >Berita</a
                   >
                 </li>
-                <li>
+                <li @click="toggleNavbar">
                   <a
                     class="dropdown-item"
                     href="#"
@@ -92,7 +94,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item ms-md-4 py-2 py-md-0">
+            <li class="nav-item ms-md-4 py-2 py-md-0" @click="toggleNavbar">
               <a
                 class="nav-link active d-flex align-items-center"
                 href="#"
@@ -119,7 +121,6 @@
 </template>
 
 <script>
-const bootstrap = require("bootstrap");
 export default {
   methods: {
     emitMaintenanceModal() {
@@ -128,12 +129,11 @@ export default {
       );
       this.$emit("modal-type-info", "maintenance");
     },
-    toggleCollapse() {
+    toggleNavbar() {
       if (window.innerWidth < 992) {
         console.log("collapsing collapse");
-        const el = document.getElementById("navbarSupportedContent");
-        const clps = new bootstrap.Collapse(el);
-        clps.toggle();
+        const btn = document.getElementById("navbar-toggler");
+        btn.click();
       }
     },
   },
