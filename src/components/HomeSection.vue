@@ -1,7 +1,15 @@
 <template>
+  <!-- home-section -->
   <div
-    class="container-fluid p-0 m-0 my-4"
-    :style="shade.state ? 'background-color: var(--clr-shade)' : ''"
+    class="container-fluid p-0 m-0"
+    :style="
+      shade.state
+        ? 'background-color: ' +
+          (shade.color == 'light'
+            ? 'var(--clr-shade)'
+            : 'var(--clr-accent-dark)')
+        : ''
+    "
   >
     <component
       :is="innerComponent"

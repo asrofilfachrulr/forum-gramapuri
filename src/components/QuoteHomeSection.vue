@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
       <div class="col-12">
-        <h1 class="ff-condensed text-center py-5">Ucapan Terimakasih!</h1>
+        <h1 class="ff-condensed text-center py-3">Ucapan Terimakasih!</h1>
       </div>
     </div>
     <div class="row justify-content-center">

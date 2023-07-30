@@ -43,7 +43,7 @@
             >
               <!-- Card 1 content -->
               <div class="card">
-                <div class="card-body">
+                <div class="card-body" style="height: 160px">
                   <h5 class="card-title fw-bold">1520001245</h5>
                   <p class="card-text">
                     <span>a.n Aisyah</span
@@ -60,7 +60,7 @@
             <div class="tab-pane fade" id="donation-card-2" role="tabpanel">
               <!-- Card 2 content -->
               <div class="card">
-                <div class="card-body">
+                <div class="card-body" style="height: 160px">
                   <h5 class="card-title">52000012</h5>
                   <p class="card-text d-flex justify-content-between">
                     <span>a.n Rina Aulia</span

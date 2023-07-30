@@ -1,35 +1,34 @@
 <template>
-  <div class="container-fluid p-0 m-0">
-    <navbar @modal-type-info="setModalInfo"></navbar>
-    <main>
+  <navbar @modal-type-info="setModalInfo"></navbar>
+  <main>
+    <div class="container-fluid p-0 m-0">
       <basic-info-modal :typeInfo="modalInfoType"></basic-info-modal>
-      <!-- carousel -->
+
       <home-carousel></home-carousel>
-      <!-- sections -->
-
-      <!-- about -->
       <home-section :innerComponent="aboutSection"></home-section>
-
-      <!-- visi misi -->
       <home-section
-        :shade="{ state: true }"
+        :shade="{ state: true, color: 'light' }"
         :innerComponent="goalNMission"
       ></home-section>
-
       <home-section :innerComponent="donationSection"></home-section>
       <home-section
-        :shade="{ state: true }"
+        :shade="{ state: true, color: 'light' }"
         :innerComponent="quoteSection"
       ></home-section>
 
-      <!-- news -->
       <!-- <home-section
         :innerComponent="newsSection"
         @modal-type-info="setModalInfo"
-      >
+        >
       </home-section> -->
-    </main>
-  </div>
+    </div>
+  </main>
+  <footer>
+    <home-section
+      :shade="{ state: true, color: 'dark' }"
+      :innerComponent="footerHome"
+    ></home-section>
+  </footer>
 </template>
 
 <script>
@@ -41,6 +40,7 @@ import AboutSection from "./components/AboutSection.vue";
 import GoalNMission from "./components/GoalNMission.vue";
 import DonationsHomeSection from "./components/DonationsHomeSection.vue";
 import QuoteHomeSection from "./components/QuoteHomeSection.vue";
+import FooterHome from "./components/FooterHome.vue";
 
 // import NewsHomeSection from "./components/NewsHomeSection.vue";
 
@@ -59,6 +59,7 @@ export default {
       goalNMission: shallowRef(GoalNMission),
       donationSection: shallowRef(DonationsHomeSection),
       quoteSection: shallowRef(QuoteHomeSection),
+      footerHome: shallowRef(FooterHome),
       modalInfoType: "",
     };
   },
