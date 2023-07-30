@@ -1,7 +1,7 @@
 <template>
   <div
     class="container-fluid p-0 m-0 my-4"
-    :style="shade.state ? 'background-color: ' + shade.color : ''"
+    :style="shade.state ? 'background-color: var(--clr-shade)' : ''"
   >
     <component
       :is="innerComponent"

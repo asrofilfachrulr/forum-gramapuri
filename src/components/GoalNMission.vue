@@ -79,6 +79,8 @@ export default {
   height: 100%;
   background-color: transparent;
   position: absolute;
+  top: 0;
+  left: 0;
   transition: all 0.2s ease-out;
 }
 

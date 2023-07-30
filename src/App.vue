@@ -12,11 +12,15 @@
 
       <!-- visi misi -->
       <home-section
-        :shade="{ state: true, color: 'var(--clr-shade)' }"
+        :shade="{ state: true }"
         :innerComponent="goalNMission"
       ></home-section>
 
       <home-section :innerComponent="donationSection"></home-section>
+      <home-section
+        :shade="{ state: true }"
+        :innerComponent="quoteSection"
+      ></home-section>
 
       <!-- news -->
       <!-- <home-section
@@ -32,13 +36,15 @@
 import navbar from "./components/Navbar.vue";
 import HomeCarousel from "./components/HomeCarousel.vue";
 import HomeSection from "./components/HomeSection.vue";
-// import NewsHomeSection from "./components/NewsHomeSection.vue";
 import BasicInfoModal from "./components/BasicInfoModal.vue";
 import AboutSection from "./components/AboutSection.vue";
-import { shallowRef } from "vue";
 import GoalNMission from "./components/GoalNMission.vue";
 import DonationsHomeSection from "./components/DonationsHomeSection.vue";
+import QuoteHomeSection from "./components/QuoteHomeSection.vue";
 
+// import NewsHomeSection from "./components/NewsHomeSection.vue";
+
+import { shallowRef } from "vue";
 export default {
   components: {
     navbar,
@@ -52,6 +58,7 @@ export default {
       aboutSection: shallowRef(AboutSection),
       goalNMission: shallowRef(GoalNMission),
       donationSection: shallowRef(DonationsHomeSection),
+      quoteSection: shallowRef(QuoteHomeSection),
       modalInfoType: "",
     };
   },
