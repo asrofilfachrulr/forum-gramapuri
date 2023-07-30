@@ -1,6 +1,6 @@
 <template>
   <div class="container py-5">
-    <div class="row justify-content-center">
+    <div class="row py-5 justify-content-center">
       <div
         class="col-12 col-md-12 col-lg-6 d-flex justify-content-center mb-5 mb-lg-0"
       >

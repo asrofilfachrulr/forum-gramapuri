@@ -1,6 +1,6 @@
 <template>
-  <div class="container pb-5" id="visi-misi">
-    <div class="row">
+  <div class="container pt-3 pb-5" id="visi-misi">
+    <div class="row pb-5">
       <div class="col-12 d-flex justify-content-center py-4">
         <h1 class="ff-condensed underline-accent py-3">Visi & Misi</h1>
       </div>
