@@ -87,4 +87,21 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--clr-accent);
+  --bs-btn-border-color: var(--clr-accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--clr-accent-dark);
+  --bs-btn-hover-border-color: var(--clr-accent-dark);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--clr-accent-dark);
+  --bs-btn-active-border-color: var(--clr-accent-dark);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--clr-accent-light);
+  --bs-btn-disabled-border-color: var(--clr-accent-light);
+}
+</style>

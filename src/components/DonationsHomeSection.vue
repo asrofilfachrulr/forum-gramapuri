@@ -4,7 +4,7 @@
       <div
         class="col-12 col-md-12 col-lg-6 d-flex justify-content-center mb-5 mb-lg-0"
       >
-        <div style="width: fit-content">
+        <div id="donation" class="my-lg-auto" style="width: fit-content">
           <h1 class="underline-accent ff-condensed text-center pb-3">
             Ayo Donasi!
           </h1>

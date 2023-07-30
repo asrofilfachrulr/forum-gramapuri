@@ -68,8 +68,9 @@ export default {
 :root {
   --clr-accent: #0a4d1f;
   --clr-accent-light: #60af79;
+  --clr-accent-dark: #073516;
 
-  --clr-shade: #effff0;
+  --clr-shade: #f0f7f1;
 }
 
 main {
