@@ -65,11 +65,6 @@ export default {
             "Kami organisasi lokal bertempat di <span class='text-accent fw-bold'>Perum. Gramapuri Persada Blok E</span>, Desa Sukajaya, Cibitung, Kabupaten Bekasi",
         },
         {
-          img: "https://img.icons8.com/pulsar-color/48/trust.png",
-          content:
-            "Kami percaya bahwa setiap perbuatan baik, <span class='text-accent fw-bold'>sekecil apapun</span>, memberikan dampak positif yang besar bagi sesama",
-        },
-        {
           img: "https://img.icons8.com/pulsar-color/48/parallel-tasks.png",
           content:
             "Kami adalah bagian dari <span class='text-accent fw-bold'>kepengurusan RT</span> yang bertanggung jawab untuk mengelola dan mengurusi kegiatan sedekah Jumat dan sedekah lainnya dalam lingkungan kami",
@@ -78,6 +73,11 @@ export default {
           img: "https://img.icons8.com/pulsar-color/48/fire-element.png",
           content:
             "Motivasi kami adalah mewujudkan semangat gotong royong. Kami <span class='text-accent fw-bold'>berkomitmen untuk selalu berkontribusi</span> dalam solidaritas sosial untuk kehidupan yang lebih baik",
+        },
+        {
+          img: "https://img.icons8.com/pulsar-color/48/trust.png",
+          content:
+            "Kami percaya bahwa setiap perbuatan baik, <span class='text-accent fw-bold'>sekecil apapun</span>, memberikan dampak positif yang besar bagi sesama",
         },
       ],
     };

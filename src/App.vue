@@ -16,6 +16,8 @@
         :innerComponent="goalNMission"
       ></home-section>
 
+      <home-section :innerComponent="donationSection"></home-section>
+
       <!-- news -->
       <!-- <home-section
         :innerComponent="newsSection"
@@ -35,6 +37,7 @@ import BasicInfoModal from "./components/BasicInfoModal.vue";
 import AboutSection from "./components/AboutSection.vue";
 import { shallowRef } from "vue";
 import GoalNMission from "./components/GoalNMission.vue";
+import DonationsHomeSection from "./components/DonationsHomeSection.vue";
 
 export default {
   components: {
@@ -48,6 +51,7 @@ export default {
       // newsSection: shallowRef(NewsHomeSection),
       aboutSection: shallowRef(AboutSection),
       goalNMission: shallowRef(GoalNMission),
+      donationSection: shallowRef(DonationsHomeSection),
       modalInfoType: "",
     };
   },

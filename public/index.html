@@ -46,12 +46,12 @@
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 300px;
-        width: 100vw;
+        overflow-x: hidden;
       }
       body {
         font-family: "Roboto", sans-serif;
         max-width: 100vw;
-        overflow-x: hidden;
+        scrollbar-gutter: 0;
       }
 
       .ff-condensed {
@@ -61,11 +61,17 @@
         overflow-x: auto; /* Enable horizontal scrolling */
         scrollbar-width: thin; /* Set the width of the scrollbar */
         scrollbar-color: #888888 #f0f0f0; /* Set the color of the scrollbar */
+        scrollbar-gutter: none;
       }
 
       /* Style the scrollbar track */
       body::-webkit-scrollbar {
         width: 10px; /* Set the width of the scrollbar */
+        position: absolute;
+      }
+
+      body::-webkit-scrollbar-track {
+        background-color: transparent;
       }
 
       /* Style the scrollbar thumb */

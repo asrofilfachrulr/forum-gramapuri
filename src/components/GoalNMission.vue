@@ -62,12 +62,28 @@ export default {
 <style>
 .card-floated-on-hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
   border-color: transparent;
+  position: relative;
 }
 
 .card-floated-on-hover:hover {
   cursor: pointer;
   transform: translateY(-5px);
+}
+
+.card-floated-on-hover::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.card-floated-on-hover:hover::after {
+  border-radius: 7px;
+  border: 3px solid var(--clr-accent);
 }
 </style>
