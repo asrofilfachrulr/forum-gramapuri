@@ -44,8 +44,11 @@
               <!-- Card 1 content -->
               <div class="card">
                 <div class="card-body" style="height: 160px">
-                  <h5 class="card-title">
-                    <em>tidak tersedia, hubungi kontak</em>
+                  <h5
+                    class="card-title"
+                    style="font-weight: 300; font-size: 0.7rem"
+                  >
+                    (tidak tersedia, hubungi kontak)
                   </h5>
                   <p class="card-text">
                     <span>a.n Aisyah</span
@@ -63,8 +66,11 @@
               <!-- Card 2 content -->
               <div class="card">
                 <div class="card-body" style="height: 160px">
-                  <h5 class="card-title">
-                    <em>tidak tersedia, hubungi kontak</em>
+                  <h5
+                    class="card-title"
+                    style="font-weight: 300; font-size: 0.7rem"
+                  >
+                    (tidak tersedia, hubungi kontak)
                   </h5>
                   <p class="card-text d-flex justify-content-between">
                     <span>a.n Rina Aulia</span
