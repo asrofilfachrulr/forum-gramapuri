@@ -44,7 +44,9 @@
               <!-- Card 1 content -->
               <div class="card">
                 <div class="card-body" style="height: 160px">
-                  <h5 class="card-title fw-bold">1520001245</h5>
+                  <h5 class="card-title">
+                    <em>tidak tersedia, hubungi kontak</em>
+                  </h5>
                   <p class="card-text">
                     <span>a.n Aisyah</span
                     ><img
@@ -61,7 +63,9 @@
               <!-- Card 2 content -->
               <div class="card">
                 <div class="card-body" style="height: 160px">
-                  <h5 class="card-title">52000012</h5>
+                  <h5 class="card-title">
+                    <em>tidak tersedia, hubungi kontak</em>
+                  </h5>
                   <p class="card-text d-flex justify-content-between">
                     <span>a.n Rina Aulia</span
                     ><img
