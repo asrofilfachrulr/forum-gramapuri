@@ -1,4 +1,4 @@
-name: Deploy API to FTP Cpanel
+name: Deploy Frontend to FTP Cpanel
 
 on:
   push:
